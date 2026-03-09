@@ -4,12 +4,15 @@ public class P_125 {
     public static void main(String[] args) {
        animal a = new labbra();
        a.sound(); // Labbra > bark-loud
+        a.walk();
 
         a = new dog();
         a.sound(); //Dog > bark
+        a.walk();
 
         a = new animal();
         a.sound(); //Animal > voice
+        a.walk();
     }
 }
 
@@ -17,6 +20,9 @@ public class P_125 {
 class animal{
          void sound(){
              System.out.println("Animal > voice");
+         }
+         void walk(){
+             System.out.println("Animal > walk");
          }
 }
 
